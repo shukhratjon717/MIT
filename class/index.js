@@ -130,3 +130,159 @@ class User {
 User.help()
 const userNum = User.serialNumber;
 console.log(userNum);
+
+// class deeper:
+// Agenda:
+// 1) Encapsulation in classes 
+// 2) Inheritance in classes and basics of parent child
+// 3) Polymorphism in classes
+
+
+// Encapsulation in classes 
+class Account {
+    // state
+    owner;
+    amount;
+    currency;
+
+    // constructor
+    constructor(owner, amount, currency = 'USD') {
+        this.owner = owner;
+        this.amount = amount;
+        this.currency = currency
+    }
+
+    // methods 
+
+    checkBalance() {
+        console.log(`Hi ${this.owner}, your balance: ${this.amount}, ${this.currency}`);
+        this.#test()
+    }
+    
+    deposit(money) {
+        this.amount = this.amount + money
+    }
+
+    #test() {
+        console.log("This is only obtainable inside class");
+    }
+} 
+// Encapsulation: OOPs restrict direct access to its methods and variables by encapsulating the code and data together. 
+// In javascript, the data binds with the functions acting on that data in the process of achieving encapsulation in order to control the data and validate it.
+ // Encapsulation : (Default, public), private, protected;
+
+ // JAVA : public, private, protected, Tashqaridan bolayaotgan changelarni okdini oladi va faqat classni ichida o'zgartirish mumkin
+ // PHP: public, private, protected
+ // python: (  ), __, _,
+ // Javascript: ( ), #, _
+  
+ class Account1{
+    // state
+    #owner;         // It became private
+    #amount;        // It became private
+    currency;       // It is public
+ }
+
+
+ const myAccount = new Account ("David", 1000, )
+ myAccount.checkBalance()
+
+ console.log("============");
+
+ myAccount.deposit(7000);
+ myAccount.checkBalance()
+
+
+
+ myAccount.deposit(15000);
+ myAccount.checkBalance()
+
+ // Encapsulation in classes
+
+ console.log("====2=====");
+ myAccount.owner = "Steve"
+ myAccount.checkBalance()
+
+ console.log("====3=====");
+ myAccount.amount = 200000;
+ myAccount.checkBalance()
+//  myAccount.test()
+
+// Inheritence in Classes (parent, child)
+
+// parent class
+class Car {
+    constructor(brand, model) {
+        this.brand = brand;
+        this.model = model
+    }
+    getDetails() {
+        console.log(`${this.brand} ${this.model}`);
+    }
+
+    start() {
+        console.log("start engine");
+    }
+
+    stop() {
+        console.log("stop engine");
+    }
+
+    maximizeSpeed(){
+        console.log('Maximal speed is not provided');
+    }
+}
+
+// child class
+class Toyota extends Car {
+    #fuel = 0
+    constructor(model, category, speed){
+        super('Toyota', model);
+        this.category = category;
+        this.speed = speed;
+    }
+    fillUpGasoline(a) {
+        this.#fuel += a;
+    }
+
+    maximizeSpeed() {
+        console.log(`${this.model} reaches ${this.speed} km/h`);
+    }
+}
+
+
+// child class
+class Tesla extends Car {
+    #battery = 0
+    constructor(model, category, speed) {
+        super("Tesla", "Model S", 330)
+        this.category = category;
+        this.speed = speed;
+    }
+    chargePower(b) {
+        this.#battery += b
+    }
+
+    // maximizeSpeed() {
+    //     console.log(`${this.model} reaches ${this.speed} km/h`);
+    // }
+
+}
+
+
+const myCar = new Toyota ("Camry", "sedan", 220);
+myCar.start();
+myCar.stop();
+myCar.fillUpGasoline(20);
+myCar.getDetails();
+myCar.maximizeSpeed();
+
+console.log("=================");
+
+const yourCar = new Tesla ("Model S", "sedan", 330);
+yourCar.start();
+yourCar.stop();
+yourCar.chargePower(50);
+yourCar.getDetails();
+yourCar.maximizeSpeed();
+// Polymorphism in classes
