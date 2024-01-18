@@ -275,7 +275,6 @@ myCar.start();
 myCar.stop();
 myCar.fillUpGasoline(20);
 myCar.getDetails();
-myCar.maximizeSpeed();
 
 console.log("=================");
 
@@ -284,5 +283,8 @@ yourCar.start();
 yourCar.stop();
 yourCar.chargePower(50);
 yourCar.getDetails();
-yourCar.maximizeSpeed();
+
 // Polymorphism in classes
+yourCar.maximizeSpeed();
+myCar.maximizeSpeed();
+
