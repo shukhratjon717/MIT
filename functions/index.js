@@ -126,46 +126,4 @@ function calculationVoid() {
 }
 const resultVoid = calculationVoid();
 
-// EXECUTION-> Ayychronous andSychronous function (bajarilish).
-
-// define 
-function calculation3() {
-  const a1 = 10;
-  const b1 = 2;
-  return a1 + b1
-}
-const result3 = calculation3()
-console.log(result3)
-
-//define (parameter) 
-function calculationPar() {
-  return a + b;
-}
-const result4 = calculationPar(10,20)
-console.log('result4:', result4)
-
-// Function Priority. Inside value.
-function calculationPri(a,b) {
-  b = 20; // default value
-} 
-const resultPri = calculationPri(5)
-console.log('result:', resultPri);
-
-// Outsider value
-const a1 = 50;
-
-function calculationOut(a1,b) {
-  return a1 + b
-};
-const resultOut = calculationOut(10,20)
-console.log("result:", resultOut)
-
-// Giving only one parameter
-// When there is no enough parameter to proceed, it searches the missed parameter outside of Function.
-const missNum = 30;
-function calculationMiss(exitNum) {
-  return  missNum + exitNum 
-}
-
-const missArg = calculationMiss(20)
-console.log('result:', missArg)
+ 
