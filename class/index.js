@@ -288,7 +288,7 @@ yourCar.stop();
 yourCar.chargePower(50);
 yourCar.getDetails();
 
-// Polymorphism in classes
+// Polymorphism in classes:  
 yourCar.maximizeSpeed();
 myCar.maximizeSpeed();
 
