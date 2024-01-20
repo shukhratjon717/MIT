@@ -288,7 +288,10 @@ yourCar.stop();
 yourCar.chargePower(50);
 yourCar.getDetails();
 
-// Polymorphism in classes
+// Polymorphism in classes: Polymorphism is one of the four fundamental principles of Object-Oriented Programming (OOP). 
+// The term originates from Greek, where 'poly' means 'many' and 'morph' means 'forms'. So, polymorphism translates to 'many forms'. 
+// The principle allows objects to take on many forms depending on the context.Sep 13, 2023
+
 yourCar.maximizeSpeed();
 myCar.maximizeSpeed();
 
