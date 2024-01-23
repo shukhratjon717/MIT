@@ -135,7 +135,7 @@ console.log('list: ' ,collection);
 
 // Mutable => push(), pop(), unshift(), shift(), sort(), reverse(), splice().
 
-// Imutsble => includes(), indexOf(), toString(), join(), sllice(), concat().
+// Inmutable => includes(), indexOf(), toString(), join(), slice(), concat().
 
 
 // concat() is used to add 2 elements with each other.
