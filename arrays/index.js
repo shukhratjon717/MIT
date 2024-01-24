@@ -29,9 +29,10 @@ console.log('fruits', fruits);
 const fruit0 = fruits[0]
 console.log('fruit ',fruit0);
 
-// it is possible to use optionat types like number, string etc ...
+// it is possible to use optional types like number, string etc ...
 
 const mixList = [1,2,3, 'apple', 5,6 ]
+     
 
 // To change one assigned value in array
 
@@ -143,3 +144,21 @@ const num = [1,3,11]
 
 const newList2 = collection.concat(num)
 console.log(newList2);
+
+
+// ARRAYS itteration methos.
+// Today's agenda:
+// 1) Arraylarning assosiy iteration methodlari: forEach, map va filter
+// 2) Arraylarni yordamchi iteration metodlari: reduce, some va every
+
+// 1) Arraylarning assosiy iteration methodlari: forEach, map va filter
+// forEach, map, filter
+
+// MAP() - bu br arraydagi har bir element uchun bir martalik berilgan callback function hisoblanadi va natijadan yangi bir array yaratadi.
+
+const mapList = [1,2,3,4,5,6,7]
+
+const mapNew = list.map(el => el*el)
+console.log(mapNew);
+
+
