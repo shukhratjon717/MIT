@@ -169,3 +169,6 @@ function calculationMiss(exitNum) {
 
 const missArg = calculationMiss(20)
 console.log('result:', missArg)
+
+
+
