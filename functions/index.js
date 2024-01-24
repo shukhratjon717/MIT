@@ -167,5 +167,5 @@ function calculationMiss(exitNum) {
   return  missNum + exitNum 
 }
 
-const missArg = calculationMiss(20,80)
+const missArg = calculationMiss()
 console.log('result:', missArg)
