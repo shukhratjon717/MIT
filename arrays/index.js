@@ -143,3 +143,6 @@ const num = [1,3,11]
 
 const newList2 = collection.concat(num)
 console.log(newList2);
+
+
+// Everything is up to date
