@@ -27,7 +27,7 @@ for (let i = 10; i >= 0; i--) {
 }
 console.log('- for loop passed here');
 
-// Iteration methods: map, filter ...
+// Iteration methods: map, filter ...git 
 const fruits = ['apple', 'cherry', 'lemon', 'banana']
 fruits.map((ele, index) => {
     console.log(`${index}: ${ele}`);
