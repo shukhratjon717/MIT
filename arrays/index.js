@@ -216,7 +216,7 @@ const nums = [2,3,4,6,7,9,1]
 // initial value, current valueni nechidan boshlanishini belgilaydi.
 const resultR = nums.reduce((total, curValue, curIndex) => {
     console.log(`${curIndex}: ${curValue}`);
-    console.log(total + curValue);
+    console.log("hello", total + curValue);
     return total + curValue;
 }, 0);
 
