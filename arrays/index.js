@@ -230,8 +230,6 @@ const resSum = nums.some((ele, index) => {
 console.log(resSum);
 
 // every() -> methodi function tomonidan berilgan shartni hamma element bajarishini tekshiradi va boolean qaytaradi.
-// every() -> methodi function tomonidan berilgan shartni hamma element bajarishini tekshiradi va boolean qaytaradi.
-// every() -> methodi function tomonidan berilgan shartni hamma element bajarishini tekshiradi va boolean qaytaradi.
 
 const resSum2 = nums.some((ele, index) => {
     console.log(`${index}: ${ele}`);
