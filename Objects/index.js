@@ -7,10 +7,13 @@
 // 6) Objectlarni Constructor usulida hosil qilish.
 
 // Programming Paradigms: Functional programming va OOP (Object Oriented Programming).
-// OOP -> Big concepts: Abstruction, Encapsulation, Inheritence and Polymorfism.
+// OOP -> Big concepts: Abstruction, Encapsulation, Inheritence and Polymorphism.
 // Functional Progranning is a programm of building computer programm using expressions and functions without mutating state and data.
 
 // OOP is about modeling a system as a collection of objects, where each object represents some particular aspec of the system. It contains function nd data.
+
+//  Abrstrution:  An abstraction is a way of hiding the implementation details and showing only the functionality to the users.
+//  In other words, it ignores the irrelevant details and shows only the required one.
 
 // Objectlarni literal usulda qurish
 
@@ -99,7 +102,7 @@ const person = {
   console.log("user's name:", user3.name);
   console.log("user's name2:", user4.name);
   
-  // Building objrcts via constructor
+  // Building objects via constructor
   
   const obj = new Object();
   obj.name = "David";
@@ -112,3 +115,5 @@ const person = {
   console.log("=====");
   const values = Object.values(obj);
   console.log(values);
+
+  

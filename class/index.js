@@ -61,7 +61,7 @@ const person3 = {
 // Organizational structure of classes
 
  // Making a class requires pascal naming standards
-  // accoding to organizationa sstructure, classes are divided into 3 parts
+  // accoding to organizationa structure, classes are divided into 3 parts
  
  class Person {
     // State
@@ -82,14 +82,18 @@ const person3 = {
     greet() {
         console.log("Hi, How do you do");
     }
+    static help() {
+        console.log("Hi, I am a class How can i help you?");
+    }
 }
 
-const person5 = new Person('Steve', 23)
-const person6 = new Person('Oliver', 25)
-const person7 = new Person('Alex', 21)
+const person5 = new Person('Steve', 23) // Objects created from classes
+const person6 = new Person('Oliver', 25)   // Objects created from classes
+const person7 = new Person('Alex', 21)  // Objects created from classes
 
 person5.greet();
 person5.introduce();
+Person.help();
 
 console.log("===========");
 person6.greet();
@@ -292,3 +296,4 @@ yourCar.maximizeSpeed();
 myCar.maximizeSpeed();
 // myCar.maximizeSpeed();
 
+  
